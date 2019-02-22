@@ -1,0 +1,139 @@
+<html>
+<head>
+<title>Sanjay</title>
+<link rel="Stylesheet" type"text/css" href="hodor.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet'>
+<script> 
+$(document).ready(function(){
+    $("#sd").click(function(){
+        $("#ProLan").slideToggle("slow");
+    });
+    $("#ss").click(function(){
+        $("#slide").slideToggle("slow");
+    });
+});
+</script>
+<body>
+<section>
+<div id ="education">
+
+<h1 style="margin-top:0px;" ><img src ="icons\book.png" class="icon1"> &nbsp;&nbsp;Education</h1>
+
+
+<h3 >ASA institute of Technology, Manhattan, New York</h3>
+<img src="icons\date.png" class="info"> Feb 2016 - Jan 2018<br>
+<p>
+Associate of Occupational Studies in Computer Programming and Information Technology.
+</p>
+<hr>
+<h3>Universal College, Kathmandu, Nepal</h3>
+<img src="icons\date.png" class="info"> 2012<br>
+<p>
+High School equivalent.
+</p>
+<hr>
+<h3>Swarnim High School, Kathmandu, Nepal</h3>
+<img src="icons\date.png" class="info"> July 2010<br>
+<p>
+School Level.
+</p>
+
+
+</div>	
+
+<div id ="intro">
+<img src ="icons\sanjay.jpg" id="proPic" alt="Sanjay Sherpa">
+<div id="myModal" class="modal">
+  <span class="close">&times;</span>
+  <img class="modal-content" id="img01">
+  <div id="caption"></div>
+</div>
+
+<h1 id="an" >Sanjay Sherpa</h1>
+
+<script>
+// Get the modal
+var modal = document.getElementById('myModal');
+
+// Get the image and insert it inside the modal - use its "alt" text as a caption
+var img = document.getElementById('proPic');
+var modalImg = document.getElementById("img01");
+var captionText = document.getElementById("caption");
+img.onclick = function(){
+    modal.style.display = "block";
+    modalImg.src = this.src;
+    captionText.innerHTML = this.alt;
+}
+
+// Get the <span> element that closes the modal
+var span = document.getElementsByClassName("close")[0];
+
+// When the user clicks on <span> (x), close the modal
+span.onclick = function() { 
+    modal.style.display = "none";
+}
+</script>
+<h1 id="an" >Sanjay Sherpa</h1>
+</div>
+
+
+<div id="skills">
+<h1 style="margin-top:0px;" id="ss">
+<img src="icons\skills.png " class="icon1"> &nbsp;&nbsp;Skills<img src ="icons\dpwn.png" align="right" class="info"></h1>
+<div id = "slide">
+<p class="skills">
+
+<img src ="icons\office.ico" class="info"> Microsoft Office<br>
+<img src ="icons\ps.png" class="info"> Adobe Photoshop<br>
+<img src ="icons\asp.png" class="info"> ASP.Net<br>
+</div>
+<hr>
+
+<h1 id="sd">
+<img src ="icons\pro.png" class="icon1"> &nbsp;&nbsp;Programming Languages<img src ="icons\dpwn.png" align="right" class="info">
+</h1>
+
+<div id="ProLan">
+<img src ="icons\c.jpg" class="info"> C#<br>
+<img src ="icons\js.svg" class="info"> Javascript<br>
+<img src ="icons\html.png" class="info"> HTML<br>
+<img src ="icons\css.png" class="info"> CSS<br>
+<img src ="icons\cont.png" class="info"> Microsoft SQL<br>
+</div>
+</p>
+
+
+</div>
+
+<div id ="personalInfo">
+
+<img src ="icons\briefcase1.png" class="info"> Student<br>
+<img src ="icons\home2.gif" class ="info"> Queens, New York, USA<br>
+<img src ="icons\Envelope.png" class="info"> sherpasanjay11@hotmail.com<br>
+<img src ="icons\phone.jpg" class ="info"> (929)-406-7451<br>
+<hr>
+<h3>
+<img src ="icons\lan.png" class="icon1">&nbsp; Languages
+</h3>
+<p style="padding-left:2em;line-height:200%;">
+
+
+<img src="icons\ame.png" class="info"> English<br>
+<img src="icons\no.png" class="info"> Nepali<br>
+<img src="icons\india.png" class="info"> Hindi<br>
+
+</div>
+
+
+
+</section>
+<footer>
+Find Me On Social Media.<br>
+<a href ="https://www.facebook.com/ssanjay.sherpa "target="_blank">
+<img src ="icons\fb1.png" class="socialMedia"></a>
+<a href="https://www.linkedin.com/in/sanjay-sherpa-9509b4118/"target="_blank">
+<img src ="icons\ln2.png" class="socialMedia">  </a>
+</footer>
+</body>
+</html>

@@ -1,0 +1,258 @@
+	body
+	{
+		background-color:whitesmoke;
+		font-family: 'Roboto';
+		color:gray;
+	}
+	
+	section
+	{
+		width: 1200px;
+		margin-top:20px;
+		margin-left:auto;
+		margin-right:auto;		
+	}
+	
+	#intro
+	{
+		width:400px;
+		
+		box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+		background-color: GhostWhite;
+	}
+	
+	#education
+	{
+		
+		width:740px;
+		padding:1.5em;
+		float:right;
+		background-color: #FFFFFE;
+		box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);;
+	}
+	
+	#personalInfo
+	{
+		
+		width:384px;
+		
+		background-color: #FFFFFE;
+		padding: 1em 0.5em;
+		box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);;
+	}
+	
+	#skills
+	{
+		
+		width:740px;
+		padding:1.5em;
+		float:right;
+		background-color: #FFFFFE;
+		box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);;
+	}
+	
+	
+	#name
+	{
+		position: absolute;
+		top:480px;
+		padding:0.5em;
+		}
+	
+	#ProLan
+	{
+		display:none;
+		
+		line-height:200%;
+
+	}
+	
+	#sd, #ss
+	{
+		cursor:pointer;
+	}
+	
+	#slide
+	{
+		display:none;
+	}
+	
+	.icon1
+	{
+		width:30px; 
+		height:30px;
+		padding:0px;
+	}
+	
+	img.info
+	{
+		width:20px;
+		height:20px;
+		padding:0px;
+		margin-bottom:0px;
+	}
+	
+	p.skills
+	{
+		
+		line-height:200%;
+		
+	}
+	
+	hr
+	{
+		border: 0;
+		height: 0;
+		border-top: 1px solid rgba(0, 0, 0, 0.1);
+		border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+		
+	}
+	
+	footer
+	{
+		background-color:#325C74;
+		margin:10em 0em 0em 0em;
+		padding:3em;
+		text-align:center;
+		line-height:200%;
+		color:white;
+	}
+	.socialMedia
+	{
+		height:30px;
+		width:30px;
+	}
+	
+	#proPic
+	{
+    		cursor: pointer;
+    		transition: 0.3s;
+		height:532px; 
+		width:400px; 
+		position:relative
+	}
+	#proPic:hover
+	{
+		opacity:0.7;
+	}
+	#ss:hover
+	{
+		opacity:0.7;
+	}
+	#sd:hover
+	{
+		opacity:0.7;
+	}
+	.modal 
+	{
+    		display: none; /* Hidden by default */
+		position: fixed; /* Stay in place */
+    		z-index: 1; /* Sit on top */
+    		padding-top: 20px; /* Location of the box */
+    		left: 0;
+    		top: 0;
+    		width: 100%; /* Full width */
+    		height: 100%; /* Full height */
+    		overflow: auto; /* Enable scroll if needed */
+    		background-color: rgb(0,0,0); /* Fallback color */
+    		background-color: rgba(0,0,0,0.9); /* Black w/ opacity */
+	}
+
+/* Modal Content (image) */
+	.modal-content 
+	{
+    		margin: auto;
+    		display: block;
+    		width: 60%;
+    		max-width: 500px;
+	}
+.modal-content, #caption {    
+    -webkit-animation-name: zoom;
+    -webkit-animation-duration: 0.6s;
+    animation-name: zoom;
+    animation-duration: 0.6s;
+}
+
+@-webkit-keyframes zoom {
+    from {-webkit-transform:scale(0)} 
+    to {-webkit-transform:scale(1)}
+}
+
+@keyframes zoom {
+    from {transform:scale(0)} 
+    to {transform:scale(1)}
+}
+
+/* The Close Button */
+.close {
+    position: absolute;
+    top: 15px;
+    right: 35px;
+    color: #f1f1f1;
+    font-size: 40px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+	.close:hover,
+.close:focus {
+    color: #bbb;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/* 100% Image Width on Smaller Screens */
+@media only screen and (max-width: 700px){
+    .modal-content {
+        width: 100%;
+    }
+}
+#caption {
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 700px;
+    text-align: center;
+    color: #ccc;
+    padding: 10px 0;
+    height: 150px;
+}
+#an
+	{
+	color:white;
+	position: absolute;
+		top:480px;
+		padding:0.5em;
+		 -webkit-animation-name: example; /* Safari 4.0 - 8.0 */
+    -webkit-animation-duration: 4s; /* Safari 4.0 - 8.0 */
+    animation-name: example;
+    animation-duration: 2s;
+}
+@-webkit-keyframes example 
+	{
+    		0%   {  top:380px;}
+    		20%  {  top:480px;}
+    		35%  {  top:410px;}
+    		40%  {  top:480px;}
+		50%  {top:430px;}
+		60%{top:480px;}
+		70%{top:460px;}	
+    		80% { top:480px;}
+		90%{ top:465px;}
+		100%{ top:480px;}
+	}
+
+/* Standard syntax */
+	@keyframes example
+	{
+    		0%   {  top:380px;}
+    		20%  {  top:480px;}
+    		35%  {  top:400px;}
+    		40%  {  top:480px;}
+		50%  {top:420px;}
+		60%{top:480px;}
+		70%{top:440px;}	
+    		80% { top:480px;}
+		90%{ top:460px;}
+		100%{ top:480px;}
+	}
